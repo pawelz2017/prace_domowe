@@ -1,0 +1,6 @@
+ #ignoruj wszystkie skompilowane plik
+*.o
+*.out
+
+#ignoruj temp gedit
+*~
