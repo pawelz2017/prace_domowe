@@ -4,6 +4,9 @@
 /*
 koniecznosc kompilowania z parametrem -lm
 gcc -Wall kalkulator_funk_kwadtatowej.c -lm -o kalkulator_funk_kwadtatowej.o
+cmake:
+target_link_libraries(prace_domowe m) in CMakeLists.txt
+prace_domowe - nazwa projektu
 */
 
 float a, b, c, y, delta, w;
