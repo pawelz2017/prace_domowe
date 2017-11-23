@@ -4,3 +4,8 @@
 
 #ignoruj temp gedit
 *~
+
+#Clion
+.idea
+CMakeLists.txt
+cmake-build-debug
