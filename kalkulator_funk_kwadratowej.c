@@ -9,7 +9,7 @@ target_link_libraries(prace_domowe m) in CMakeLists.txt
 prace_domowe - nazwa projektu
 */
 
-float a, b, c, y, delta, w;
+double a, b, c, y, delta, w;
 int czy_dalej = 1;
 
 
@@ -18,7 +18,7 @@ void informacje() {
     printf("y=ax^2+bx+c\n");
 }
 
-float delta_obl(float b, float a, float c) {
+double delta_obl(double b, double a, double c) {
     /*
     obliczenie wyroznika trojmianu kwadratowego
     delta = b^2 - 4ac
@@ -27,24 +27,24 @@ float delta_obl(float b, float a, float c) {
     return pow(b, 2) - 4 * a * c;
 }
 
-float mz0(float b, float a) {
+double mz0(double b, double a) {
     /*
     Obliczanie pojedynczego miejsca zerowego
     */
 
-    float mz0;
+    double mz0;
     mz0 = (-b - sqrt(delta)) / (2 * a);
     printf("X0 = %f\n", mz0);
 
     return 0;
 }
 
-float mz1(float b, float delta, float a) {
+double mz1(double b, double delta, double a) {
     /*
     Obliczanie pierwszego miejsca zerowego
     */
 
-    float mz1;
+    double mz1;
     mz1 = (-b - sqrt(delta)) / (2 * a);
 
     printf("X1 = %f\n", mz1);
@@ -53,11 +53,11 @@ float mz1(float b, float delta, float a) {
     return 0;
 }
 
-float mz2(float b, float delta, float a) {
+double mz2(double b, double delta, double a) {
     /*
     Obliczanie pierwszego miejsca zerowego
     */
-    float mz2;
+    double mz2;
     mz2 = (-b + sqrt(delta)) / (2 * a);
 
     printf("X2 = %f\n", mz2);
@@ -66,11 +66,11 @@ float mz2(float b, float delta, float a) {
     return 0;
 }
 
-float wierzcholek(float b, float delta, float a) {
+double wierzcholek(double b, double delta, double a) {
     /*
     Obliczanie pierwszego miejsca zerowego
     */
-    float wx, wy;
+    double wx, wy;
     wx = -b / (2 * a);
     wy = -delta / (4 * a);
 
@@ -94,13 +94,13 @@ Petla kontynuacji
         */
 
         printf("\nPodaj wartosc a: ");
-        scanf("%f", &a);
+        scanf("%lf", &a);
 
         printf("\nPodaj wartosc b: ");
-        scanf("%f", &b);
+        scanf("%lf", &b);
 
         printf("\nPodaj wartosc c: ");
-        scanf("%f", &c);
+        scanf("%lf", &c);
 
         if (a != 0) {
 
