@@ -5,11 +5,11 @@
 cd Pulpit/
 
 ## Utworzenie katalogu
-mkdir first_repo
+mkdir first_repo  
 cd first_repo/
 
 ## Instalacja git
-sudo apt-get update
+sudo apt-get update  
 sudo apt-get install git
 
 ### Sprawdzenie wersji git
@@ -34,7 +34,7 @@ git add .
 git status
 
 ## Konfiguracja git
-git config --global user.email "niechce@spamu.loc"
+git config --global user.email "niechce@spamu.loc"  
 git config --global user.name "pawelz2017"
 
 
