@@ -2,11 +2,12 @@
 
 //Deklaracja zmiennych globalnych
 int ciag[9];
-int i, wybor;
+int wybor = 0;
 
 
 void wprowadzanie(){
 	
+	int i;
 //Petla do wprowadzania danych 	
 	for(i=0;i<10;i++){
 		printf("Wprowadz %i liczbe ciagu liczb calkowitych: \n", i+1);
@@ -19,8 +20,7 @@ float liczSredniaParzystych(){
 	
 //Deklaracja zmiennych funkcji wraz z ich zerowaniem
 	float sredniaParzystych = 0;
-	int licznikParzystych = 0;
-	
+	int licznikParzystych = 0, i;
 
 	for(i=0;i<10;i++){
 		
@@ -30,12 +30,16 @@ float liczSredniaParzystych(){
 		}
 	}
 	
-	sredniaParzystych = sredniaParzystych / licznikParzystych;
-	printf("Srednia liczb parzystych wynosi : %f\n", sredniaParzystych);
-	
+	if(licznikParzystych == 0){
+		printf("Brak liczb parzystych w ciagu\n");
+	}else{
+		sredniaParzystych = sredniaParzystych / licznikParzystych;
+		printf("Srednia liczb parzystych wynosi : %f\n", sredniaParzystych);
+	}
 	return sredniaParzystych;
 }
 void wyswietlCiag(){
+	int i;
 	printf("Liczby ciagu: ");
 	for(i=0;i<10;i++){
 		printf("%i ", ciag[i]);
@@ -44,7 +48,7 @@ void wyswietlCiag(){
 }
 
 void sortujRosnaco(){
-	int j, temp;
+	int i, j, temp;
 	for(j=0; j<10; j++){
     for(i=0; i<9; i++){
              if(ciag[i]>ciag[i+1]){
@@ -59,7 +63,7 @@ void sortujRosnaco(){
 }
 
 int podajDominante(){
-	int j, iloscWystapien, maxWystapien = 0, dominanta;
+	int i, j, iloscWystapien, maxWystapien = 0, dominanta;
 	
 	for(j=0;j<10;j++){
 		iloscWystapien = 0;
@@ -124,8 +128,14 @@ void menu(){
 
 int main()
 {
+	//Czyszczenie ekranu - UNIX
+	printf("\033[2J\033[H");
+	
 	//Komunikat informacyjny
 	printf("Ciagi\n");
+	
+	//Pierwsze wprowadzanie liczb do ciagu
+	wprowadzanie();
 	
 	//Petla zasadnicza programu
 	while (wybor != 9) {
@@ -133,7 +143,7 @@ int main()
 	//Wywolanie menu
 	menu();
 
-
+//Zrobic potwierdzenie wyjscia z programu 
 	}
 	return 0;
 	
