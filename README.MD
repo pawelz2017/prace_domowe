@@ -76,8 +76,9 @@ System szesnstkowy
 + 3x16^2 +14 x 16^1 + 8 x 16^0=768+224+8=1000
 
 
-Zródło: [Wikipedia][1]
-
+Zródło: 
+[Wikipedia][1]
+[Silno Ręki][2]
 
 [1]: https://pl.wikipedia.org "Wikipedia"
-[1]: Silno Ręki
+[2]:https://github.com/majonez007 "Silno Ręki"
