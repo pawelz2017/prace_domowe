@@ -62,7 +62,7 @@ System ósemkowy
 
 >System ósemkowy jest w niektórych przypadkach stosowany w informatyce, przykładowo w systemie Linux polecenie chmod ustawiające prawa dostępu do pliku może przyjąć jako argument oktalną reprezentację żądanych praw dostępu (np: chmod u=rwx g=rx o=r plik odpowiada zapisowi chmod 754 plik). W językach programowania C/C++/Java/Perl/PHP liczby oktalne poprzedza się pojedynczym zerem (np. 0212).
 
-System szesnstkowy
+System szesnastkowy
 ------------------
 > Szesnastkowy system liczbowy znany również pod nazwą system heksadecymalny – pozycyjny system liczbowy, w którym podstawą jest liczba 16. Do zapisu liczb w tym systemie potrzebne jest szesnaście znaków (cyfr szesnastkowych). W najpowszechniejszym standardzie poza cyframi dziesiętnymi od 0 do 9 używa się pierwszych sześciu liter alfabetu łacińskiego: A, B, C, D, E, F (wielkich lub małych). Cyfry 0-9 mają te same wartości co w systemie dziesiętnym, natomiast litery odpowiadają następującym wartościom: 
 > A = 10, B = 11, C = 12, D = 13, E = 14 oraz F = 15.
@@ -76,9 +76,9 @@ System szesnstkowy
 + 3x16^2 +14 x 16^1 + 8 x 16^0=768+224+8=1000
 
 
-Zródło: 
-[Wikipedia][1]
-[Silno Ręki][2]
+Zródła:  
+[Wikipedia][1]  
+[Silno Ręki][2]  
 
-[1]: https://pl.wikipedia.org "Wikipedia"
-[2]:https://github.com/majonez007 "Silno Ręki"
+[1]: https://pl.wikipedia.org "Wikipedia"  
+[2]:https://github.com/majonez007 "Silno Ręki"  
