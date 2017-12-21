@@ -80,4 +80,4 @@ Zródło: [Wikipedia][1]
 
 
 [1]: https://pl.wikipedia.org "Wikipedia"
-[2]: Silno Ręki
+[1]: Silno Ręki
