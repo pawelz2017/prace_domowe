@@ -303,5 +303,5 @@ Zródła:
 
 [1]: https://pl.wikipedia.org "Wikipedia"  
 [2]: https://github.com/majonez007 "Silno Ręki"  
-[1]: https://github.com/darek526 "darek526"
+[3]: https://github.com/darek526 "darek526"
   
