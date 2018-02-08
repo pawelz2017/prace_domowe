@@ -12,13 +12,13 @@ cd first_repo/
 sudo apt-get update  
 sudo apt-get install git
 
-### Sprawdzenie wersji git
+## Sprawdzenie wersji git
 git --version
 
 ## Inicjalizacja repozytorium GIT w bieżącym katalogu
 git init
 
-### Wyśliwtlenie zawartości aktualnego katalogu
+## Wyśliwtlenie zawartości aktualnego katalogu
 ls
 
 ## Utworzenie pliku
@@ -59,7 +59,7 @@ git log
 ## Edycja pliku
 nano test.txt
 
-## dodanie plików (lub ich zmian) do repozytorium git (. - wszystkich)
+### dodanie plików (lub ich zmian) do repozytorium git (. - wszystkich)
 git add .
 
 ## Dodaje do commita wraz z komentarzem
@@ -72,14 +72,24 @@ git remote add origin https://github.com/pawelz2017/test.git
 ## Wysłanie zmienionych plików do zdalnego repozytorium
 git push -u origin master
 
-### Kopiowanie danych z github
+## Kopiowanie danych z github
 git clone
 
-### Ściągnięcie zmian z serwera do posiadanego już repo w folderze
+## Ściągnięcie zmian z serwera do posiadanego już repo w folderze
 git pull
 
-### dodajemy ignorowane pliki, rozszerzenia
+## dodajemy ignorowane pliki, rozszerzenia
 echo "*.o     #ignoruj wszystkie skompilowane pliki" >> .gitignore
+
+----------------------------------------------------------------------
+
+### Obsługa gcc
+  
+## Kompilacja pliku źródłowego
+gcc plik_zrodlowy.c -o plik_wykonywalny.o
+
+## Pokazywanie większej ilości uwag podczas kompilacji
+gcc -Wall
 
 ---
 ___KONIEC___
