@@ -13,18 +13,18 @@ Makra preprocesora działają na zasadzie zwykłego zastępowania napisów, to p
 
 Należy umieszczać nawiasy dookoła parametrów makra kiedy to tylko możliwe. Zapewnia to, że gdy są wyrażeniami kolejność działań nie zostanie zmieniona. Na przykład:
 ```
-*** Źle: #define kwadrat(x) (x*x)
-*** Dobrze: #define kwadrat(x) ((x)*(x))
-*** Przykład: Załóżmy, że w programie makro kwadrat() zdefiniowane bez nawiasów zostało wywołane następująco: 
+***Źle:*** #define kwadrat(x) (x*x)
+***Dobrze:*** #define kwadrat(x) ((x)*(x))
+***Przykład:*** Załóżmy, że w programie makro kwadrat() zdefiniowane bez nawiasów zostało wywołane następująco: 
 kwadrat(a+b). Wtedy zostanie ono zamienione przez preprocesor na: (a+b*a+b). 
 Z kolejności działań wiemy, że najpierw zostanie wykonane mnożenie, więc wartość wyrażenia 
 kwadrat(a+b) będzie różna od kwadratu wyrażenia a+b.
 ```
 Należy umieszczać nawiasy dookoła całego makra, jeśli jest pojedynczym wyrażeniem. Ponownie, chroni to przed zaburzeniem kolejności działań.
 ```
-*** Źle: #define kwadrat(x) (x)*(x)
-*** Dobrze: #define kwadrat(x) ((x)*(x))
-*** Przykład: Definiujemy makro #define suma(a, b) (a)+(b) i wywołujemy je w kodzie 
+***Źle:*** #define kwadrat(x) (x)*(x)
+***Dobrze:*** #define kwadrat(x) ((x)*(x))
+***Przykład:*** Definiujemy makro #define suma(a, b) (a)+(b) i wywołujemy je w kodzie 
 wynik = suma(3, 4) * 5. Makro zostanie rozwinięte jako wynik = (3)+(4)*5, 
 co — z powodu kolejności działań — da wynik inny niż pożądany.
 ```
